@@ -1,0 +1,652 @@
+
+.App {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    
+}
+.grass {
+    background-color: rgb(13, 145, 13);
+}
+
+.fire {
+    background-color: rgb(145, 13, 13);
+}
+
+.water {
+    background-color: #2389da;
+}
+.bug {
+    background-color: #7fff00;
+}
+
+.normal {
+    background-color: gray;
+}
+
+.ice {
+    background-color: rgb(165, 242, 243);
+}
+
+.fairy {
+    background-color: rgb(250, 173, 186);
+}
+
+.flying {
+    background-color: #a2daf0;
+}
+
+.fighting {
+    background-color: orange;
+}
+
+.electric {
+    background-color: yellow;
+}
+
+.psychic {
+    background-color: rgb(168, 15, 173);
+}
+
+.rock {
+    background-color:#7f7053;
+}
+
+.ghost {
+    background-color: #580b8f;
+}
+
+.dragon {
+    background-color: #4b0082;
+}
+
+.dark {
+    background-color: black;
+}
+
+.steel {
+    background-color: rgb(216, 208, 208);
+}
+
+.ground {
+    background-color: rgb(117, 53, 53);
+}
+
+.poison {
+    background-color: rgb(134, 15, 134);
+}
+
+.yeter-lütfen {
+    width: 100%;
+}
+.header {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-family: monospace;
+    font-size: 2rem;
+    
+}
+.deneme {
+    
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 100px;
+}
+
+
+.pokedex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.ok {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5%;
+    top: 35%;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.ok-l {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    top: 35%;
+    font-size: 2rem;
+    /* border-radius: 10rem; */
+    font-weight: bolder;
+    rotate: 180deg;
+}
+.pokedex-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 20%;
+    border: 1px solid rgb(53, 18, 18);
+    border-radius: 0.5rem;
+    position: relative;
+}
+.pok-select {
+    width: 15rem;
+    height: 2rem;
+    background-color: brown;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: monospace;
+    text-transform: capitalize;
+    border-radius: 0.7rem;
+}
+.pok-option {
+    font-family: monospace;
+    text-transform: capitalize;
+}
+.img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.img-div:hover {
+    transform: scale(110%);
+}
+
+.pok-img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+}
+.id-div {
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.pok-id {
+    margin:0;
+}
+.id-p {
+    margin: 0;
+}
+.name-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 1.2rem;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.pok-name {
+    text-transform: uppercase;
+}
+
+.ability-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+.pab {
+    font-size: 1.2rem;
+    margin: 0;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+}
+
+.pok-abilities {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+.type-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.typ {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+
+}
+
+.yeter p {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 5px;
+}
+
+.pok-type {
+    margin: 0;
+    font-size: 1.1rem;
+    font-family: monospace;
+    text-transform: capitalize;
+}
+
+.btn-pick {
+    width: auto;
+    padding: 0.7rem;
+    border: none;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 1rem;
+    position: absolute;
+    bottom: -10%;
+    text-transform: uppercase;
+    
+}
+.btn-pick:hover {
+    background-color: #221b1b;
+}
+
+.btn-pick:active {
+    background-color: #3f2d2d;
+}
+
+.fighter-pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pok-hp {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: monospace;
+}
+
+/* .pok-vs-img {
+    
+} */
+
+
+.fighter-pokemon {
+    border: 1px solid black;
+    padding: 2rem;
+    height: 20rem;
+    width: 10rem;
+    font-family: monospace;
+    border-radius: 0.5rem;
+}
+
+.pok-hp {
+    font-size: 1.3rem;
+    color: rgb(95, 0, 0);
+}
+
+.fighter-pok-name {
+    font-size: 1.1rem;
+    text-transform:uppercase;
+}
+
+.player-id {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: #221b1b;
+}
+
+.pok-vs-img {
+    width: 10rem;
+    height: 10rem;
+    border: none;
+}
+
+.save-pok {
+    height: auto;
+    width: 4rem;
+    padding: 0.3rem;
+    border: none;
+    background-color: #254409;
+    color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    font-family: monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.4rem;
+}
+
+.save-pok:hover {
+    background-color: #35531a;
+} 
+.save-pok:active {
+    background-color: #263d12;
+} 
+
+
+.vs-img {
+    border-radius: 0.5rem;
+    opacity: 0.8;
+}
+
+
+.amk {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.start-fight-btn {
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    font-family: monospace;
+    color: thistle;
+    background-color: #000000;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.start-fight-btn:hover {
+    background-color:#302828;
+}
+
+.start-fight-btn:active {
+    background-color: #271717;
+}
+
+
+.fight-view {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.pok-1-infos {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    
+}
+
+.pok-1-hp-falan {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.pok-1-health {
+    font-size: 1.4rem;
+    margin: 0;
+    width: 4rem;
+    text-align: center;
+
+}
+
+.hphp {
+    margin: 0;
+    font-size: 1.4rem;
+    font-family: monospace;
+}
+
+
+.pok-1-name-1 {
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.fighter-pok-img {
+    width: 20rem;
+    height: 15rem;
+    margin-top: 1rem;
+}
+
+
+.moves-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pok1moves {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    color: black;
+    border: 2px solid black;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.pok1moves:hover {
+    background-color: rgb(80, 59, 59);
+}
+
+.pok1moves:active {
+    transform: scale(105%);
+}
+
+
+.attack-div {
+    width: 15rem;
+    height: auto;
+    font-family: monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(131, 13, 13);
+}
+
+.player-id-fight {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* .attack-p {
+
+} */
+
+/* @keyframes example {
+    0%   {left:0; top:0;}
+    25%  { left:100rem; top:0px;}
+
+  }
+@keyframes example2 {
+    0%   {right:0; top:0;}
+    25%  { right:100rem; top:0px;}
+
+  }
+
+.skill-div {
+    width: 45rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 35%;
+}
+
+.inside-div-pokemon-1 {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    position: absolute;
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+.inside-div-pokemon-2 {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    position: absolute;
+    animation-name: example2;
+    animation-duration: 5s;
+} */
+
+.anan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.gameover-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+}
+
+.gameover-inner-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 2rem;
+    box-shadow: 0rem 0rem 4rem 3rem rgba(0, 0, 0, 0.432);
+    border-radius: 1rem;
+}
+
+.cong {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.winner-pok {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    color: rgb(2, 63, 2);
+}
+
+.winner-pok-cont {
+    width: 15rem;
+    height: 15rem;
+}
+
+.winner-pok-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+}
+
+.again-btn {
+    padding: 0.2rem;
+    width: 5rem;
+    font-family: monospace;
+    border-radius: 0.5rem;
+    background-color: #1b3108;
+    color: #fff;
+    cursor: pointer;
+}
+
+.again-btn:hover {
+    background-color: #26420e;
+}
+.again-btn:active {
+    background-color: #182b08;
+}
+
+.finish-game-btn {
+    font-family: monospace;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: darkgreen;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.finish-game-btn:hover {
+    background-color: #182b08;
+}
+
+.finish-game-btn:active {
+    background-color: #000000;
+}
+
+
+.winner-player {
+    font-size: 1.4rem;
+    font-family: monospace;
+}
+
+/* @keyframes hp {
+    0%   { bottom:0px; left:0;}
+    50%  { top:7rem; left:0px;}
+  }
+
+.hpdiv {
+    position: absolute;
+    top: -2%;
+    border: 1px solid black;
+    width: 3rem;
+    height: 7rem;
+}
+
+.damage- {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -20%; 
+    right: 20%;
+    animation-name: hp;
+    animation-duration: 4s;
+    text-align: center;
+    font-size: 1.4rem;
+}    */
+
