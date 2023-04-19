@@ -17,6 +17,7 @@ const attack1 = () => {
     setDamage(damage)
     setAttackerPok(props.pok1.name)
     setAttacked(true)
+    gameover()
     return setPok2Score(pok2Score-damage)
 }
 
@@ -26,14 +27,14 @@ const attack11 = () => {
         setDamage(damage)
         setAttackerPok(props.pok1.name)
         setAttacked(true)
- 
+        gameover()
         return setPok2Score(pok2Score-damage)
     } else {
         const damage = 10
         setDamage(damage)
         setAttackerPok(props.pok1.name)
         setAttacked(true)
- 
+        gameover()
         return setPok2Score(pok2Score-damage)
     }
 }
@@ -43,12 +44,14 @@ const attack111 = () => {
         setDamage(damage)
         setAttackerPok(props.pok1.name)
         setAttacked(true)
+        gameover()
         return setPok2Score(pok2Score-damage)
     } else {
         const damage = 20
         setDamage(damage)
         setAttackerPok(props.pok1.name)
         setAttacked(true)
+        gameover()
         return setPok1Score(pok1Score-damage)
     }
 }
@@ -57,6 +60,7 @@ const attack2 = () => {
     setDamage(damage)
     setAttackerPok(props.pok2.name)
     setAttacked(false)
+    gameover()
 
     return setPok1Score(pok1Score-damage)
 }
@@ -67,13 +71,15 @@ const attack22 = () => {
         setDamage(damage)
         setAttackerPok(props.pok2.name)
         setAttacked(false)
- 
+        gameover()
+        
         return setPok1Score(pok1Score-damage)
     } else {
         const damage = 10
         setDamage(damage)
         setAttackerPok(props.pok2.name)
         setAttacked(false)
+        gameover()
         return setPok1Score(pok1Score-damage)
     }
 }
@@ -83,13 +89,14 @@ const attack222 = () => {
         setDamage(damage)
         setAttackerPok(props.pok2.name)
         setAttacked(false)
-
+        gameover()
         return setPok1Score(pok1Score-damage)
     } else {
         const damage = 20
         setDamage(damage)
         setAttackerPok(props.pok2.name)
         setAttacked(false)
+        gameover()
         return setPok2Score(pok2Score-damage)
     }
 }
@@ -100,9 +107,6 @@ const gameover = () => {
     }
     else if (pok2Score <= 0) {
         setWinner(props.pok1)
-    }
-    else {
-        alert("You has not finished the game! (One of the pokemon's health must be 0 or less!)")
     }
 }
 
