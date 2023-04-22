@@ -490,46 +490,6 @@
     text-transform: uppercase;
 }
 
-/* .attack-p {
-
-} */
-
-/* @keyframes example {
-    0%   {left:0; top:0;}
-    25%  { left:100rem; top:0px;}
-
-  }
-@keyframes example2 {
-    0%   {right:0; top:0;}
-    25%  { right:100rem; top:0px;}
-
-  }
-
-.skill-div {
-    width: 45rem;
-    height: 2rem;
-    position: absolute;
-    bottom: 35%;
-}
-
-.inside-div-pokemon-1 {
-    height: 1rem;
-    width: 1rem;
-    border-radius: 100%;
-    position: absolute;
-    animation-name: example;
-    animation-duration: 5s;
-}
-
-.inside-div-pokemon-2 {
-    height: 1rem;
-    width: 1rem;
-    border-radius: 100%;
-    position: absolute;
-    animation-name: example2;
-    animation-duration: 5s;
-} */
-
 .anan {
     display: flex;
     flex-direction: row;
