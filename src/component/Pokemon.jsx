@@ -10,14 +10,14 @@ export const Pokemon = () => {
     const [pok, setPok] = useState("bulbasaur") 
     const [singlePok, setSinglePok] = useState([]);
     const [pokColor, setPokColor] = useState([]);
-    const [pokHp1, setPokHp1] = useState(0)
-    const [pokImg1, setPokImg1] = useState("")
-    const [pokHp2, setPokHp2] = useState(0)
-    const [pokImg2, setPokImg2] = useState("")
-    const [pok1Moves, setPok1Moves] = useState([])
-    const [pok2Moves,setPok2Moves] = useState([])
-    const [pok1Colo, setPok1Colo] = useState("")
-    const [pok2Colo, setPok2Colo] = useState("")
+    // const [pokHp1, setPokHp1] = useState(0)
+    // const [pokImg1, setPokImg1] = useState("")
+    // const [pokHp2, setPokHp2] = useState(0)
+    // const [pokImg2, setPokImg2] = useState("")
+    // const [pok1Moves, setPok1Moves] = useState([])
+    // const [pok2Moves,setPok2Moves] = useState([])
+    // const [pok1Colo, setPok1Colo] = useState("")
+    // const [pok2Colo, setPok2Colo] = useState("")
     // const [vs1, setVs1] = useState(true)
     const [pok1, setPok1] = useState([])
     const [pok2, setPok2] = useState([])
@@ -26,39 +26,40 @@ export const Pokemon = () => {
     
     
     const addPokemon1 = () => { 
-        setPokHp1(singlePok.stats?.map((hp) => hp.base_stat)[0])
-        setPokImg1(singlePok.sprites.front_default);
-        setPok1Moves(singlePok.moves)
-        setPok1Colo(singlePok.types[0].type.name)
+        // setPokHp1(singlePok.stats?.map((hp) => hp.base_stat)[0])
+        // setPokImg1(singlePok.sprites.front_default);
+        // setPok1Moves(singlePok.moves)
+        // setPok1Colo(singlePok.types[0].type.name)
         
+
         
         const pokemon1 = {
             id:1,
             name:pok,
-            hp:pokHp1,
-            img:pokImg1,
+            hp:singlePok.stats?.map((hp) => hp.base_stat)[0],
+            img:singlePok.sprites.front_default,
             saved:false,
-            moves:pok1Moves,
-            color:pok1Colo,
+            moves:singlePok.moves,
+            color:singlePok.types[0].type.name,
         }
         
         setPok1(pokemon1);
-    }
+}
     const addPokemon2 = () => { 
         
-        setPokHp2(singlePok.stats?.map((hp) => hp.base_stat)[0])
-        setPokImg2(singlePok.sprites.front_default);
-        setPok2Moves(singlePok.moves)
-        setPok2Colo(singlePok.types[0].type.name)
+        // setPokHp2(singlePok.stats?.map((hp) => hp.base_stat)[0])
+        // setPokImg2(singlePok.sprites.front_default);
+        // setPok2Moves(singlePok.moves)
+        // setPok2Colo(singlePok.types[0].type.name)
 
         const pokemon2 = {
             id:2,
             name:pok,
-            hp:pokHp2,
-            img:pokImg2,
+            hp:singlePok.stats?.map((hp) => hp.base_stat)[0],
+            img:singlePok.sprites.front_default,
             saved:false, 
-            moves:pok2Moves,
-            color:pok2Colo,
+            moves:singlePok.moves,
+            color:singlePok.types[0].type.name,
         }
         
         setPok2(pokemon2);
