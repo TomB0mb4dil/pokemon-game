@@ -143,31 +143,31 @@ export const Pokemon = () => {
                     <p className="pok-id">{singlePok.id}</p>
                   </div>
                   <div className="name-div">
-                    <p className="">Name:</p>
+                    <p className="asd">Name:</p>
                     <p className="pok-name">{singlePok.name}</p>
                   </div>
                   <div className="ability-div">
                     <p className="pab">Abilities:</p>
                     <div className="amk">
-                      <p className="pok-abilities">
+                      <span className="pok-abilities">
                         {singlePok.abilities?.map((ab, idx) => {
                           return (
-                            <p>
+                            <p key={idx}>
                               {idx + 1}. {ab.ability.name}
                             </p>
                           );
                         })}
-                      </p>
+                      </span>
                     </div>
                   </div>
                   <div className="type-div">
                     <p className="typ">Type:</p>
                     <div className="yeter">
-                      <p className="pok-type">
+                      <span className="pok-type">
                         {singlePok.types?.map((asd, idx) => {
-                          return <p>{asd.type.name}</p>;
+                          return <p key={idx}>{asd.type.name}</p>;
                         })}
-                      </p>
+                      </span>
                     </div>
                   </div>
                 </div>
